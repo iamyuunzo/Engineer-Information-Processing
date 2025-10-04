@@ -1,0 +1,8 @@
+# VSCode 설정 파일 제외
+.vscode/
+
+# PowerShell 스크립트 제외
+scripts/
+
+# 기타 모든 비-C파일 제외
+!*.c
