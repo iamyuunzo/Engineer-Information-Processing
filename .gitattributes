@@ -1,0 +1,5 @@
+# Force GitHub Linguist to detect main code folders
+C/* linguist-detectable=true
+Python/* linguist-detectable=true
+Java/* linguist-detectable=true
+SQL/* linguist-detectable=true
