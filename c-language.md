@@ -242,6 +242,7 @@ int main() {
 
 **(4) ceil() / floor()**
 - 올림 / 내림
+- + round() : 주어진 실수 값을 가장 가까운 정수로 반올림 (-3.75면 -4.0)
 ```c
 
 #include <stdio.h>
@@ -309,3 +310,15 @@ int main() {
 }
 
 ```
+
+#### C언어 표준 라이브러리
+
+| 헤더파일 | 기능 | 관련 함수 |
+|-----------|------|------------|
+| **stdio.h** | 표준 입출력 | `printf()`, `scanf()`, `getchar()`, `fopen()`, `fseek()` 등 |
+| **string.h** | 메모리와 문자열의 처리 | `strcat()`, `strcmp()`, `strcpy()`, `strlen()` 등 |
+| **ctype.h** | 문자 검사 및 변환 | `isalnum()`, `isalpha()`, `isgraph()`, `tolower()` 등 |
+| **math.h** | 삼각함수, 지수, 절댓값, 수학 함수 등 | `sin()`, `cos()`, `tan()`, `log()`, `exp()`, `fmod()`, `sqrt()`, `abs()` 등 |
+| **stdlib.h** | 메모리 동적 할당, 가상 난수 발생, 문자열 변환 | `malloc()`, `free()`, `rand()`, `strtod()`, `atof()` 등 |
+| **malloc.h** | 메모리 할당에 관한 함수 | `calloc()`, `malloc()`, `free()` 등 |
+| **time.h** | 날짜와 시간, 내부 클럭 관련 | `clock()`, `ctime()`, `asctime()`, `ftime()`, `time()`, `getdata()` 등 |
