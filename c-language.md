@@ -1,3 +1,59 @@
+## 🖥️ C언어 자료형과 변수
+
+**(1) 자료형**
+- 효율적인 메모리 사용을 위해 변수에 저장할 데이터 종류, 범위 결정이 여러 종류의 자료형 존재
+
+- 문자형 (char, unsigned char = 1byte)
+- 정수형 (short = 2, int = 4, long = 4, long long = 9byte)
+- 실수형 (float = 4, double = 8, long double = 12~16byte)
+
+### 🧩 C언어 예약어
+
+- 자료형 : char, int, float, double, enum, void, struct, union, short, long, signed, unsigned
+- 기억분류 : auto, register, static, extern
+- 제어문 : if, else, for, while, do, switch, case, default, break, continue, return, goto
+- 기타 : sizeof, const, volatile
+
+<br>
+
+### 🧩 변수 관련 정리
+
+- 변수 : 값이 저장되는 기억공간(변수에 저장된 값은 변경이 가능함)
+- 정해진 자료형과 할당된 값을 가짐
+
+**(1) 변수명 작성 규칙**
+
+- 선언 후 사용
+- 영문자 or _로 시작
+- 숫자, _ 가능, 공백 불가능
+- _제외 특수문자 X
+- 대소문자 구분
+- 예약어 변수명 X
+
+**(2) 변수의 종류**
+
+- **지역변수 (Local Variable)**
+    - 함수 내부 or 중괄호 내부에서 선언되고 사용 (스택 영역에 저장)
+    - 유효 범위 : 함수 내부나 중괄호에서 유효. (함수 종료 or 중괄호 벗어나면 사라짐)
+
+- **전역변수 (Global Variable)**
+    - 어느 범위에서든 참조 (데이터 영역에 저장)
+    - 전처리기 아래 선언. 모든 함수에 공통으로 사용
+
+- **정적변수 (Static Variable)**
+    - 지역 + 전역 특징 (데이터 영역에 저장)
+    - 함수 종료되어도 유지 (프로그램 종료 전까지 메모리에서 소멸X)
+
+- **동적변수 (Dynamic Variable)**
+    - malloc 함수 등으로 메모리 공간 확보 (프로그램 실행 도중)
+    - Heap 영역에 저장
+
+- **외부변수 (Extern Variable)**
+    - 다른 파일에서 선언된 전역변수를 참조
+    - extern 키워드 사용
+
+<br>
+
 ## 🖥️ C언어 주요 함수
 
 ### 🧩 문자열 함수 <string.h>
